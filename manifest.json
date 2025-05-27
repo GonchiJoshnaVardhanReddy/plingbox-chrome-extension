@@ -4,22 +4,13 @@
   "version": "1.0.0",
   "description": "A temporary email inbox manager for Chrome - Plingbox",
   "permissions": ["storage", "activeTab"],
-  "host_permissions": ["https://api.tempmail.org/*", "https://*.tempmail.com/*"],
+  "host_permissions": [
+    "https://api.tempmail.org/*",
+    "https://*.tempmail.com/*"
+  ],
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Plingbox",
-    "default_icon": {
-      "16": "icons/icon16.png",
-      "32": "icons/icon32.png",
-      "48": "icons/icon48.png",
-      "128": "icons/icon128.png"
-    }
-  },
-  "icons": {
-    "16": "icons/icon16.png",
-    "32": "icons/icon32.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
+    "default_title": "Plingbox"
   },
   "background": {
     "service_worker": "background.js"
